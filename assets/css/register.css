@@ -1,40 +1,45 @@
 
-.login-container {
+
+
+
+/* Main Container */
+
+.register-container {
     width: 100%;
-    max-width: 430px;
+    max-width: 520px;
 }
 
-/* Login Card */
+/* Register Card */
 
-.login-card {
+.register-card {
     background-color: #ffffff;
-    padding: 40px;
+    padding: 35px 40px;
     border-radius: 16px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Header */
 
-.login-header {
+.register-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
-.login-header h2 {
+.register-header h1 {
     font-size: 30px;
     color: #315c45;
     margin-bottom: 8px;
 }
 
-.login-header p {
+.register-header p {
     color: #777;
     font-size: 14px;
 }
 
-/* Form Group */
+/* Form Groups */
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .form-group label {
@@ -45,9 +50,10 @@
     color: #37473e;
 }
 
-/* Inputs */
+/* Inputs and Selects */
 
-input {
+input,
+select {
     width: 100%;
     padding: 12px 14px;
     border: 1px solid #d5ddd8;
@@ -63,14 +69,23 @@ input::placeholder {
     color: #aaa;
 }
 
-input:focus {
+input:focus,
+select:focus {
     border-color: #4d8a68;
     box-shadow: 0 0 0 3px rgba(77, 138, 104, 0.12);
 }
 
-/* Login Button */
+/* Disabled Selects */
 
-.login-button {
+select:disabled {
+    background-color: #f1f3f2;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Register Button */
+
+.register-button {
     width: 100%;
     padding: 13px;
     border: none;
@@ -81,11 +96,30 @@ input:focus {
     font-weight: 600;
     cursor: pointer;
     transition: 0.2s ease;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
-.login-button:hover {
+.register-button:hover {
     background-color: #264936;
+}
+
+/* Login Link */
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-link a {
+    color: #315c45;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
 }
 
 /* Error Message */
@@ -100,38 +134,19 @@ input:focus {
     text-align: center;
 }
 
-/* Register Link */
-
-.register-link {
-    text-align: center;
-    margin-top: 22px;
-    font-size: 14px;
-    color: #666;
-}
-
-.register-link a {
-    color: #315c45;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
-}
-
 /* Mobile */
 
 @media (max-width: 600px) {
 
     body {
-        padding: 15px;
+        padding: 20px 15px;
     }
 
-    .login-card {
-        padding: 30px 22px;
+    .register-card {
+        padding: 28px 22px;
     }
 
-    .login-header h2 {
-        font-size: 26px;
+    .register-header h1 {
+        font-size: 25px;
     }
 }
